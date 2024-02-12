@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.5.3/css/bootstrap.min.css"
+    integrity="sha512-oc9+XSs1H243/FRN9Rw62Fn8EtxjEYWHXRvjS43YtueEewbS6ObfXcJNyohjHqVKFPoXXUxwc+q1K7Dee6vv9g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="css/style.css">
+  <title>Media</title>
+</head>
+
+<body>
+
+  <header id="top"></header><!-- empty header to contain tlm logo background image placed in css-->
+
+  <nav class="navbar navbar-expand-sm navbar-light"><!--navigation bar settings: size for expansion and text color-->
+    <a class="navbar-brand mx-auto" href="#"></a><!--hamburger menu icon-->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+      aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown"><!--links included in hamburger menu-->
+      <div class="navbar-nav m-auto">
+        <a class="nav-item nav-link" href="index.html">Home</a><!--link to home page-->
+        <a class="nav-item nav-link" href="info.html">Information</a><!--link to information page-->
+        <a class="nav-item nav-link active" href="media.html">Media</a><!--link to media page-->
+        <a class="nav-item nav-link" href="courses.html">Courses</a><!--link to courses page-->
+        <a class="nav-item nav-link" href="contact.html">Contact</a><!--link to contact page-->
+      </div>
+    </div>
+  </nav>
+
+  <main class="jumbotron container"><!--bootstrap jumbotron component-->
+    <div class="row">
+      <h2 class="col-md-12">students at work.</h2>
+      <h1 class="col-md-12">check <span class="black">us</span> out</h1>
+      <div class="block col-md-3"></div><!--creates color block to add to the bottom of all headers/sub-headers-->
+
+      <section class="col-md-12">
+        <div class="frame"><!--border frame for carousel-->
+          <div id="tlmcarousel" class="carousel slide" data-ride="carousel"><!--bootstrap carousel component-->
+            <div class="carousel-inner"><!--contains carousel image slides-->
+
+              <div class="carousel-item active"><!--image slide for carousel-->
+                <img class="d-block w-100" src="images/students-listening.jpg" alt="students listening">
+              </div>
+
+              <div class="carousel-item"><!--image slide for carousel-->
+                <img class="d-block w-100" src="images/students-talking.jpg" alt="students talking">
+              </div>
+
+              <div class="carousel-item"><!--image slide for carousel-->
+                <img class="d-block w-100" src="images/students-coding2.jpg" alt="students coding">
+              </div>
+
+              <div class="carousel-item"><!--image slide for carousel-->
+                <img class="d-block w-100" src="images/collaboration2.jpg" alt="collaboration amongst students">
+              </div>
+
+              <div class="carousel-item"><!--image slide for carousel-->
+                <img class="d-block w-100" src="images/students-presenting.jpg" alt="students presenting">
+              </div>
+
+              <div class="carousel-item"><!--image slide for carousel-->
+                <img class="d-block w-100" src="images/getting-feedback.jpg" alt="getting feedback">
+              </div>
+            </div>
+
+            <a class="carousel-control-prev" href="#tlmcarousel" role="button"
+              data-slide="prev"><!--carousel control button for previous item-->
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#tlmcarousel" role="button"
+              data-slide="next"><!--carousel control button for next item-->
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+
+          </div><!--carousel-->
+        </div><!--frame-->
+      </section>
+    </div><!--row-->
+  </main><!--container-->
+
+  <footer class="footer">
+    <div class="container">
+      <div class="rows">
+        <div class="col-md-12">&quotChanging Lives Through Tech&quot &copy2022</div>
+        <a class="top" href="#top">back to top</a>
+      </div><!--row-->
+    </div><!--container-->
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.slim.min.js"
+    integrity="sha512-M+qMI1PHRcYcOpJzeJlaWbVVx2JJyPIwZas8or7dc97LZOokjvbpfRxymhVtlJLyjiF3wGyr0FJOA4DLONLVLw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.8/umd/popper.min.js"
+    integrity="sha512-TPh2Oxlg1zp+kz3nFA0C5vVC6leG/6mm1z9+mA81MI5eaUVqasPLO8Cuk4gMF4gUfP5etR73rgU/8PNMsSesoQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.5.3/js/bootstrap.min.js"
+    integrity="sha512-8qmis31OQi6hIRgvkht0s6mCOittjMa9GMqtK9hes5iEQBQE/Ca6yGE5FsW36vyipGoWQswBj/QBm2JR086Rkw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="js/scripts.js"></script>
+</body>
+
+</html>

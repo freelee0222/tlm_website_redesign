@@ -1,0 +1,215 @@
+body {/*establishing font family and color for entire page*/
+  font-family: helvetica neue;
+  font-size: 10pt;
+  color: #23221f;/*TLM signature blackish*/
+  min-width:375px;
+}
+
+main {/*adds a margin around all heading/sub-heading/color blocks*/
+  margin: 20px;
+}
+
+footer {/*properly sizes footer and adds TLM's signature gold background color*/
+  height: 50px;
+  width: 100%;
+  background-color: #daa520;/*TLM signature gold*/
+  margin-top: 50px;
+}
+
+header {/*TLM logo background image placed in header and sized properly w/background color to match*/
+  background-image: url(../images/logos/header.jpg);
+  background-repeat: no-repeat;
+  background-size: 750px;
+  background-color: #23221f;/*TLM signature blackish*/
+  height: 200px;
+}
+
+.icon {/*controls positioning of TLM icon*/
+  float: right;
+}
+
+.courses {/*TLM provided picture with space for text used on the top of the courses page*/
+  background-image: url(../images/logos/courses.jpg);
+  background-repeat: no-repeat;
+  background-size: 750px;
+  background-color: black;
+  height: 210px;
+}
+
+
+
+/*navbar settings*/
+.navbar {/*signature gold for background color of navbar*/
+  background-color: #daa520;/*TLM signature gold*/
+}
+
+.navbar-toggler {/*moves hamburger menu to the left of the navbar*/
+   position: relative;
+   right: 400px;
+}
+
+
+
+/*typography settings*/
+h1 {/*settings for large gold header text*/
+  font-family:helvetica neue condensed bold;
+  font-size: 60pt;
+  font-weight: 700;
+  color: #daa520;/*TLM signature gold*/
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.black {/*settings for large black header text*/
+  font-family:helvetica neue condensed bold;
+  font-size: 60pt;
+  font-weight: 700;
+  color: #23221f;/*TLM signature blackish*/
+  text-align: left;
+  text-transform: uppercase;
+}
+
+h2 {/*settings for sub-header text*/
+  font-family: helvetica neue light;
+  font-size: 30pt;
+  font-weight: 200;
+  color: black;
+  letter-spacing: 20pt;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+h3 {/*settings for paragraph title text*/
+  font-family: helvetica neue bold;
+  font-size: 20pt;
+  font-weight: 700;
+  color: black;
+  letter-spacing: 12pt;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+h4 {/*extra font header added to meet requirements*/
+  font-family: Georgia;
+  font-size: 58pt;
+  color: #daa520;/*TLM signature gold*/
+  letter-spacing: 30pt;
+  text-align: left;
+  text-transform: uppercase;
+  position: relative;
+  left: 300px;
+  top: 60px;
+}
+
+p {/*settings for paragraph text*/
+  font-size: 14pt;
+  color: black;
+  line-height: 45px;
+}
+
+.block {/*creates color block to add to the bottom of all headers/sub-headers*/
+  border: 1px solid #daa520;/*TLM signature gold*/
+  background-color: #daa520;/*TLM signature gold*/
+  height: 13px;
+  width: 220px;
+  margin: 5px 1px 40px 1px;
+}
+
+
+
+/*link settings*/
+a {/*changes default color of links to TLM gold*/
+  color:#daa520;/*TLM signature gold*/
+  display: block;
+}
+
+a:hover {/*changes default hover color to black*/
+  color: black;
+}
+
+.nav-item {
+  margin-left: 40px;
+}
+
+.inline {/*creates a class to display selected links inline*/
+  display: inline;
+}
+
+.top {/*changes color and position of back to top link in the footer*/
+  color: black;
+  text-decoration: underline;
+}
+
+.top:hover {/*changes hover color of back to top link in the footer*/
+  color: #f0f0f0;
+}
+
+
+/*form settings*/
+form {/*creates a box for contact-us form*/
+   width: 50%;
+   min-width: 350px;
+   border: solid 5px;
+   padding: 20px;
+   margin: auto;
+}
+
+.send {/*customizes the send button on the contact-us form*/
+   text-align: left;
+   background: #daa520;/*TLM signature gold*/
+   border: solid;
+   width: 100px;
+}
+
+
+/*bootstrap overrides*/
+.frame {/*creates a frame for picture carousel*/
+  border: solid 15px #daa520;/*TLM signature gold*/
+  width:80%;
+  position: relative;
+  left: 50px;
+}
+
+.jumbotron {/*changes background color of jumbotron*/
+  background-color: #f0f0f0;
+}
+
+
+@media screen and (max-width: 700px){
+/*changing font sizes and display for smaller screens*/
+
+h1 {/*settings for large gold header text*/
+  font-size: 24pt;
+}
+
+.black {/*settings for large black header text*/
+  font-size: 24pt;
+}
+
+h2 {/*settings for sub-header text*/
+  font-size: 14pt;
+  letter-spacing: 10pt;
+}
+
+h3 {/*settings for paragraph title text*/
+  font-size: 12pt;
+  letter-spacing: 6pt;
+  color: black;
+  margin-top:5px;
+}
+
+p {/*settings for paragraph text*/
+  font-size: 12pt;
+  line-height: 20px;
+}
+
+.block {/*re-sizes color block to add to the bottom of all headers/sub-headers*/
+  height: 6px;
+  width: 110px;
+  margin: 5px 1px 20px 01px;
+}
+
+.courses {/*eliminates courses header on smaller screens*/
+  display: none;
+}
+ }
